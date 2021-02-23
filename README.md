@@ -27,7 +27,7 @@ Has 4 on-board isolated SolidState Relays for switching machine power, GasAssist
 
 Can take power entirely from the USB host, or from a common industrial 24Vdc supply.
 
-Limit switch inputs have convenoent screw-terminal connectors.
+Limit switch inputs have convenient screw-terminal connectors.
 
 In common with RAMPS:
 Limit switch headers, I2C & reset botton.
