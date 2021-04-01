@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.6-0-10_14)"
     },
-    "CreationDate":  "2020-10-31T20:27:49+00:00"
+    "CreationDate":  "2020-11-07T00:26:36+00:00"
   },
   "GeneralSpecs":
   {
@@ -15,7 +15,7 @@
     {
       "Name": "DeWinCNC",
       "GUID": "44655769-6e43-44e4-932e-6b696361645f",
-      "Revision": "0.5"
+      "Revision": "0.11"
     },
     "Size":
     {

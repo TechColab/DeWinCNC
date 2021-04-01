@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "DeWinCNC"
-Date "2020-10-26"
-Rev "0.2"
+Title "DEWINCNC"
+Date "2021-04-01"
+Rev "0.05"
 Comp "TechColab"
 Comment1 "CNC Arduino MEGA Offboard Shield"
 Comment2 ""
@@ -183,7 +183,7 @@ L Connector:Screw_Terminal_01x02 J36
 U 1 1 5FA390C2
 P 2050 4300
 F 0 "J36" H 2100 4150 50  0000 L CNN
-F 1 "PWM" H 2050 4400 50  0000 L CNN
+F 1 "PWM" H 2100 4300 50  0000 L CNN
 F 2 "" H 2050 4300 50  0001 C CNN
 F 3 "~" H 2050 4300 50  0001 C CNN
 	1    2050 4300
@@ -861,7 +861,6 @@ F 3 "~" H 5400 4350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 9550 1650
-NoConn ~ 9550 1850
 Wire Wire Line
 	2350 5850 2450 5850
 $Comp
@@ -924,7 +923,7 @@ $Comp
 L Connector_Generic:Conn_01x03 J37
 U 1 1 5F9FA871
 P 5700 1650
-F 0 "J37" V 5650 1500 50  0000 R CNN
+F 0 "J37" V 5600 1550 50  0000 R CNN
 F 1 "1-Wire" V 5800 1800 50  0000 R CNN
 F 2 "" H 5700 1650 50  0001 C CNN
 F 3 "~" H 5700 1650 50  0001 C CNN
@@ -958,13 +957,13 @@ $EndComp
 $Comp
 L Device:R R10
 U 1 1 60B872FE
-P 5900 1950
-F 0 "R10" V 5750 1950 50  0000 L CNN
-F 1 "4k7" V 5900 1850 50  0000 L CNN
-F 2 "" V 5830 1950 50  0001 C CNN
-F 3 "~" H 5900 1950 50  0001 C CNN
-	1    5900 1950
-	0    1    1    0   
+P 6050 1700
+F 0 "R10" V 5950 1750 50  0000 L CNN
+F 1 "4k7" V 6050 1600 50  0000 L CNN
+F 2 "" V 5980 1700 50  0001 C CNN
+F 3 "~" H 6050 1700 50  0001 C CNN
+	1    6050 1700
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R8
@@ -1344,10 +1343,6 @@ Wire Wire Line
 	2850 1500 1850 1500
 Wire Wire Line
 	1850 1500 1850 1650
-Text Label 4450 1150 3    50   ~ 0
-D22
-Text Label 5700 1900 3    50   ~ 0
-D22
 Text Label 4050 900  0    50   ~ 0
 D7
 Text Label 7700 3400 3    50   ~ 0
@@ -1492,8 +1487,6 @@ Wire Wire Line
 Wire Wire Line
 	9500 3800 9550 3800
 Wire Wire Line
-	9500 3700 9550 3700
-Wire Wire Line
 	10350 3700 10400 3700
 Wire Wire Line
 	10350 3800 10400 3800
@@ -1590,8 +1583,6 @@ Wire Wire Line
 	9500 2650 9550 2650
 Wire Wire Line
 	9500 2750 9550 2750
-Wire Wire Line
-	9500 2850 9550 2850
 Wire Wire Line
 	9500 2950 9550 2950
 Wire Wire Line
@@ -1704,8 +1695,6 @@ F 3 "~" H 6200 5600 50  0001 C CNN
 	1    6200 5600
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4450 1100 4450 1150
 Text Label 8600 1900 0    50   ~ 0
 D21(SCL)
 Text Label 8600 2000 0    50   ~ 0
@@ -1847,20 +1836,7 @@ Wire Wire Line
 	6200 2150 6200 2100
 Connection ~ 6600 2350
 Wire Wire Line
-	6050 1850 5800 1850
-Wire Wire Line
-	5700 1950 5750 1950
-Wire Wire Line
-	5700 1850 5700 1950
-Wire Wire Line
-	6050 1950 6050 1850
-Wire Wire Line
-	6050 1850 6050 1500
-Connection ~ 6050 1850
-Wire Wire Line
 	5600 1850 5600 2350
-Wire Wire Line
-	6050 1500 6150 1500
 Connection ~ 6150 1500
 Wire Wire Line
 	5600 2350 6250 2350
@@ -1869,9 +1845,6 @@ Wire Wire Line
 	5200 1850 5400 1850
 Wire Wire Line
 	5400 1850 5400 1500
-Wire Wire Line
-	5400 1500 6050 1500
-Connection ~ 6050 1500
 Wire Wire Line
 	4600 1850 4800 1850
 Wire Wire Line
@@ -2075,14 +2048,12 @@ Wire Wire Line
 Connection ~ 4800 1500
 Text Label 3300 4850 0    50   ~ 0
 Vcc
-Text Label 1850 4200 0    50   ~ 0
+Text Label 2250 4150 0    50   ~ 0
 D44
-Wire Wire Line
-	1850 4200 1850 4300
 Wire Wire Line
 	3400 6050 3400 6100
 Wire Wire Line
-	2350 6350 2450 6350
+	2350 6350 2400 6350
 Wire Wire Line
 	2450 5850 2750 5850
 Wire Wire Line
@@ -2091,7 +2062,7 @@ Wire Wire Line
 	2450 6050 2450 6350
 Connection ~ 2450 6350
 Wire Wire Line
-	2450 6350 2750 6350
+	2450 6350 2600 6350
 Wire Wire Line
 	2750 6100 2750 5850
 Connection ~ 2750 5850
@@ -2615,10 +2586,6 @@ Wire Wire Line
 	3550 6350 4350 6350
 Wire Wire Line
 	1850 4400 1850 6350
-Wire Wire Line
-	1850 6350 2250 6350
-NoConn ~ 9500 2850
-NoConn ~ 9500 3700
 NoConn ~ 9850 5250
 Connection ~ 5950 5100
 Wire Wire Line
@@ -2677,4 +2644,222 @@ Connection ~ 5400 5600
 Connection ~ 5800 6350
 Wire Wire Line
 	5800 6350 6000 6350
+Wire Wire Line
+	5400 1500 5900 1500
+Wire Wire Line
+	6050 1550 6050 1500
+Connection ~ 6050 1500
+Wire Wire Line
+	6050 1500 6150 1500
+Wire Wire Line
+	5800 1850 5900 1850
+Wire Wire Line
+	5900 1850 5900 1500
+Connection ~ 5900 1500
+Wire Wire Line
+	5900 1500 6050 1500
+Wire Wire Line
+	5700 1850 5700 1900
+Wire Wire Line
+	5700 1900 6050 1900
+Wire Wire Line
+	6050 1900 6050 1850
+Connection ~ 5700 1900
+Wire Wire Line
+	4450 1100 4450 1450
+Wire Wire Line
+	4450 1450 5500 1450
+Wire Wire Line
+	5500 1450 5500 1900
+Wire Wire Line
+	5500 1900 5700 1900
+Text Label 6000 2050 2    50   ~ 0
+D22
+$Comp
+L Jumper:SolderJumper_2_Bridged JP48
+U 1 1 604B2031
+P 5850 2150
+F 0 "JP48" H 5800 2200 50  0000 C CNN
+F 1 "D56,D57,D62?" H 5866 2050 50  0000 C CNN
+F 2 "" H 5850 2150 50  0001 C CNN
+F 3 "~" H 5850 2150 50  0001 C CNN
+	1    5850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1900 5700 2150
+Wire Wire Line
+	6000 2150 6000 2050
+$Comp
+L Jumper:SolderJumper_2_Bridged JP49
+U 1 1 5FA49E09
+P 2050 4050
+F 0 "JP49" H 2050 3950 50  0000 C CNN
+F 1 "Laser/Spindle" H 2100 4150 50  0000 C CNN
+F 2 "" H 2050 4050 50  0001 C CNN
+F 3 "~" H 2050 4050 50  0001 C CNN
+	1    2050 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4300 1850 4050
+Wire Wire Line
+	1850 4050 1900 4050
+Wire Wire Line
+	2200 4050 2200 4150
+Wire Wire Line
+	2200 4150 2250 4150
+$Comp
+L Connector:Conn_01x01_Male J50
+U 1 1 5FA920E3
+P 9150 2050
+F 0 "J50" H 9150 2100 50  0000 C CNN
+F 1 "3.3v" H 9150 2000 50  0000 C CNN
+F 2 "" H 9150 2050 50  0001 C CNN
+F 3 "~" H 9150 2050 50  0001 C CNN
+	1    9150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 1850 9350 1850
+Wire Wire Line
+	9350 1850 9350 2050
+$Comp
+L Connector_Generic:Conn_01x05 J51
+U 1 1 5FAA384B
+P 6350 6700
+F 0 "J51" V 6314 6412 50  0000 R CNN
+F 1 "Serial0" V 6223 6412 50  0000 R CNN
+F 2 "" H 6350 6700 50  0001 C CNN
+F 3 "~" H 6350 6700 50  0001 C CNN
+	1    6350 6700
+	0    -1   -1   0   
+$EndComp
+Text Label 9300 1850 2    50   ~ 0
+3.3v
+Wire Wire Line
+	9300 1850 9350 1850
+Connection ~ 9350 1850
+Text Label 6550 6950 3    50   ~ 0
+3.3v
+Text Label 6450 6950 3    50   ~ 0
+D0(Rx0)
+Text Label 6350 6950 3    50   ~ 0
+D1(Tx0)
+Wire Wire Line
+	6150 6900 5950 6900
+Wire Wire Line
+	5950 6900 5950 5800
+Connection ~ 5950 5800
+Wire Wire Line
+	6250 6900 6250 6950
+Wire Wire Line
+	6250 6950 5800 6950
+Wire Wire Line
+	5800 6950 5800 6350
+Wire Wire Line
+	5800 7150 5800 6950
+Connection ~ 5800 6950
+Wire Wire Line
+	6550 6900 6550 7700
+Wire Wire Line
+	3900 7150 3850 7150
+Wire Wire Line
+	3850 7150 3850 7750
+$Comp
+L Connector:DB15_Female_MountingHoles J52
+U 1 1 5FF7F17D
+P 2500 7300
+F 0 "J52" V 2699 7255 50  0000 C CNN
+F 1 "DB15_Joystick" V 2790 7255 50  0000 C CNN
+F 2 "" H 2500 7300 50  0001 C CNN
+F 3 " ~" H 2500 7300 50  0001 C CNN
+	1    2500 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 6900 6450 7750
+Wire Wire Line
+	3850 7750 6450 7750
+Wire Wire Line
+	6350 6900 6350 7450
+Wire Wire Line
+	5800 7450 6350 7450
+Wire Wire Line
+	3900 7250 3800 7250
+Wire Wire Line
+	1850 6350 2250 6350
+Wire Wire Line
+	3200 7000 3200 6450
+Wire Wire Line
+	3200 6450 3750 6450
+Wire Wire Line
+	3750 6450 3750 5850
+Connection ~ 3750 5850
+Wire Wire Line
+	2600 7000 2600 6350
+Connection ~ 2600 6350
+Wire Wire Line
+	2600 6350 2750 6350
+Wire Wire Line
+	2400 7000 2400 6350
+Connection ~ 2400 6350
+Wire Wire Line
+	2400 6350 2450 6350
+Wire Wire Line
+	1600 7300 1600 6350
+Wire Wire Line
+	1600 6350 1850 6350
+Connection ~ 1850 6350
+Text Label 3000 6950 1    50   ~ 0
+D62(A8)
+Text Label 2000 6950 1    50   ~ 0
+D56(A2)
+Wire Wire Line
+	3000 7000 3000 6950
+Wire Wire Line
+	2000 7000 2000 6950
+Wire Wire Line
+	9550 3700 9500 3700
+Wire Wire Line
+	9500 2850 9550 2850
+Text Label 2800 6950 1    50   ~ 0
+D57(A3)
+Text Label 2200 6950 1    50   ~ 0
+D58(A4)
+Wire Wire Line
+	2800 7000 2800 6950
+Wire Wire Line
+	2200 7000 2200 6950
+NoConn ~ 3900 7350
+NoConn ~ 5800 7350
+NoConn ~ 5800 7250
+NoConn ~ 3100 7000
+NoConn ~ 2900 7000
+NoConn ~ 2700 7000
+NoConn ~ 2500 7000
+NoConn ~ 2300 7000
+NoConn ~ 2100 7000
+NoConn ~ 1900 7000
+NoConn ~ 1800 7000
+Wire Wire Line
+	3800 7250 3800 7450
+Wire Wire Line
+	3800 7700 6550 7700
+Wire Wire Line
+	3800 7450 3900 7450
+Connection ~ 3800 7450
+Wire Wire Line
+	3800 7450 3800 7700
+$Comp
+L ESP8266:ESP-01v090 U1001
+U 1 1 608C8AE1
+P 4850 7300
+F 0 "U1001" H 4850 7815 50  0000 C CNN
+F 1 "ESP-01v090" H 4850 7724 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 4850 7300 50  0001 C CNN
+F 3 "http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/" H 4850 7300 50  0001 C CNN
+	1    4850 7300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
