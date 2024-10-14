@@ -35,10 +35,10 @@ Keeps the Aux-1,2,3,4 ports for Servos, SD-card, LCD contoler etc. within the sa
 
 
 
-Additionaal functionality:
+Additional functionality:
 Could be plugged into the WinCNC controller to replace the CNC machine's breakout board.
 Could be used with the WinCNC controller to monitor/simulate most signals.
-Can be usaed as a general purpose breakout shield with 4 SSRs & 23 I/O lines (inc 10 analog).
+Can be used as a general purpose breakout shield with 4 SSRs & 23 I/O lines (inc 10 analog).
 
 ToDo:
 Most PCB manufacturers will want a bigger gap between main & break-off boards.  And perforation holes.
